@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;900&display=swap');
 @import "normalize.css";
 
 :root {
@@ -5,7 +6,7 @@
   --white: #fff;
   --black: #000;
   --text-color: #161823;
-  
+
 
   //font
 
@@ -15,14 +16,18 @@
   --default-layout-header-width: 1150px;
   --default-layout-horizontal-spacer: 24px;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
   font-family: sans-serif;
   font-size: 1.6rem;
@@ -30,19 +35,18 @@ body {
   text-rendering: optimizeSpeed;
   color: var(--text-color);
 }
+
 button,
 input,
 [tabindex] {
   outline: none;
   border: none;
 }
+
 a[href] {
   // color: var(--text-color);
   text-decoration: none;
 }
-
-
-
 
 
 //custom tippy tooltip
@@ -54,9 +58,11 @@ body {
     line-height: 2.2rem;
     background-color: rgba(84, 84, 84, 0.92);
   }
+
   .tippy-arrow {
     color: rgba(84, 84, 84, 0.92);
   }
+
   .tippy-content {
     padding: 8px 9px;
   }

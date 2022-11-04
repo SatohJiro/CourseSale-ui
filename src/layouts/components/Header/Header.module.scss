@@ -22,6 +22,7 @@
   display: flex;
   flex: 1 1;
   align-items: center;
+
   img {
     border-radius: 8px;
     flex-shrink: 0;
@@ -29,6 +30,7 @@
     object-fit: contain;
     width: 38px;
   }
+
   .logo-heading {
     color: #000;
     font-size: 1.4rem;
@@ -36,8 +38,10 @@
     margin-left: 16px;
   }
 }
+
 .body {
   width: 420px;
+
   .search-wrapper {
     border: 2px solid #e8e8e8;
     border-radius: 20px;
@@ -47,6 +51,7 @@
     transition: border-color 0.2s ease-in-out;
     display: flex;
     align-items: center;
+
     .search-icon {
       background-position: 50%;
       background-repeat: no-repeat;
@@ -56,6 +61,7 @@
       transition: opacity 0.2s ease-in-out;
       width: 30px;
     }
+
     .search-input {
       border: none;
       caret-color: #444;
@@ -66,11 +72,13 @@
     }
   }
 }
+
 .actions {
   align-items: center;
   display: flex;
   justify-content: flex-end;
   flex: 1 1;
+
   .mylearn-btn {
     background-color: transparent;
     color: #333;
@@ -80,16 +88,19 @@
     margin-right: 16px;
     padding: 8px;
   }
+
   .action-btn {
     padding: 8px;
     position: relative;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    .icon{
-       color:  #333;
+
+    .icon {
+      color: #333;
     }
   }
+
   .avatar {
     border-radius: 50%;
     cursor: pointer;

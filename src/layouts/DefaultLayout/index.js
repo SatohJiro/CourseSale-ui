@@ -5,8 +5,9 @@ import Header from "~/layouts/components/Header";
 import Sidebar from "~/layouts/components/Sidebar";
 
 const cx = classNames.bind(style);
+
 function DefaultLayout({children}) {
-    return ( 
+    return (
         <div className={cx('wrapper')}>
             <Header></Header>
             <div className={cx('container')}>
@@ -16,7 +17,7 @@ function DefaultLayout({children}) {
                 </div>
             </div>
         </div>
-     );
+    );
 }
 
 export default DefaultLayout;
