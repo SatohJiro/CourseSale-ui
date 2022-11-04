@@ -6,33 +6,33 @@ import Login from "./pages/Login"
 
 function App() {
   return (
-    <Login></Login>
-    // <Router>
-    //   <div className="App">
-    //     <Routes>
-    //       {publicRoutes.map((route, index) => {
-    //         let Layout = DefaultLayout;
-    //         if (route.layout) {
-    //           Layout = route.layout;
-    //         } else if (route.layout === null) {
-    //           Layout = Fragment;
-    //         }
-    //         const Page = route.component;
-    //         return (
-    //           <Route
-    //             key={index}
-    //             path={route.path}
-    //             element={
-    //               <Layout>
-    //                 <Page />
-    //               </Layout>
-    //             }
-    //           />
-    //         );
-    //       })}
-    //     </Routes>
-    //   </div>
-    // </Router>
+    // <Login></Login>
+    <Router>
+      <div className="App">
+        <Routes>
+          {publicRoutes.map((route, index) => {
+            let Layout = DefaultLayout;
+            if (route.layout) {
+              Layout = route.layout;
+            } else if (route.layout === null) {
+              Layout = Fragment;
+            }
+            const Page = route.component;
+            return (
+              <Route
+                key={index}
+                path={route.path}
+                element={
+                  <Layout>
+                    <Page />
+                  </Layout>
+                }
+              />
+            );
+          })}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
