@@ -1,5 +1,6 @@
 .wrapper {
-  margin-top: 20px;
+  --banner-active: 0px;
+  margin-top: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,109 +39,31 @@
 .list-banner-wrapper {
   width: 13288px;
   opacity: 1;
-  //   transform: translate3d(-6040px, 0px, 0px);
   display: block;
   left: 0;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   top: 0;
+    animation-name: changeBanner;
+    animation-delay: 4s;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
 }
 
-.banner {
-  outline: none;
-  width: 1208px;
-  display: block;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.banner-content {
-  width: 100%;
-  display: inline-block;
-}
-.banner-body {
-  background: linear-gradient(to right, rgb(0, 126, 254), rgb(6, 195, 254));
-  width: 100%;
-  display: flex;
-}
 
-.banner-body-right {
-  display: flex;
-  flex: 3 1;
-  justify-content: flex-end;
-  a img {
-    height: 100%;
-    object-fit: cover;
-  }
-}
-.banner-body-left {
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  font-size: 1.6rem;
-  justify-content: center;
-  line-height: 1.6;
-  max-width: 100%;
-  padding: 0 36px 36px;
-  width: 640px;
-  .banner-heading {
-    a {
-      color: white;
-    }
-    margin-bottom: 8px;
-    font-weight: 600;
-  }
-  .banner-desc {
-    margin-bottom: 24px;
-    margin-top: 0;
-    max-width: 600px;
-  }
-  .banner-btn {
-    border: 2px solid #fff;
-    border-radius: 16px;
-    color: #fff;
-    display: inline-block;
-    font-size: 1.4rem;
-    font-weight: 700;
-    min-width: 124px;
-    padding: 4px 10px;
-    text-align: center;
-    transition: 0.2s ease;
-  }
-}
 
-.slider-dots {
-  display: flex;
-  left: 40px;
-  list-style: none;
-  margin: 10px;
-  li {
-    width: 32px;
-    background-color: #9aa6af;
-    opacity: 0.75;
-    border-radius: 4px;
-    button {
-      background-color: transparent;
-      display: block;
-      font-size: 0;
-      line-height: 0;
-      outline: none;
-      padding: 5px;
-      cursor: pointer;
-
-      height: 8px;
-      width: 100%;
-    }
-    + li {
-      margin-left: 10px;
-    }
+@keyframes changeBanner {
+  0% {
+    transform: translate3d(-0px, 0px, 0px);
   }
-  .active {
-    width: 50px;
-    background-color: rgb(80, 79, 79);
+  25% {
+    transform: translate3d(-1208px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(-2416px, 0px, 0px);
+  }
+  75% {
+    transform: translate3d(-3624px, 0px, 0px);
   }
 }
