@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import classNames from "classnames/bind";
 import style from "./Sidebar.module.scss";
 
-const cx = classNames.bind(style);
-
 function Sidebar() {
+  const cx = classNames.bind(style);
+
   return (
     <aside className={cx("sidebar-wrapper")}>
       <div className={cx("wrapper")}>

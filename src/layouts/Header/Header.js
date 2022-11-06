@@ -1,12 +1,12 @@
 import { faBell, faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import classNames from "classnames/bind";
-import style from "./Header.module.scss";
+import style from './Header.module.scss'
 
+function Header(props) {
+  const {value, handleChangeValue} = props;
+  const cx = classNames.bind(style);
 
-const cx = classNames.bind(style);
-
-function Header() {
   return (
     <header className={cx("wrapper")}>
       <div className={cx("logo")}>
@@ -26,8 +26,10 @@ function Header() {
           </div>
           <input
             className={cx("search-input")}
-            spellCheck="false"
             placeholder="Tìm kiếm khóa học, bài viết, video, ..."
+            spellCheck={false}
+            value={value}
+            onChange={handleChangeValue}
           />
         </div>
       </div>
