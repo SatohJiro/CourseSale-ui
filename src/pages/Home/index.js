@@ -1,5 +1,2 @@
-function Home() {
-    return ( <h2>Home Page</h2> );
-}
-
+import Home from "./Home";
 export default Home;

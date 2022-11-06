@@ -100,7 +100,7 @@ export const CourseDetailPage = (props) => {
                             focusable="false"
                             data-prefix="fas"
                             data-icon="gauge-high"
-                            class="svg-inline--fa fa-gauge-high CourseDetail_icon__sLJtd"
+                            className="svg-inline--fa fa-gauge-high CourseDetail_icon__sLJtd"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -131,7 +131,7 @@ export const CourseDetailPage = (props) => {
                             focusable="false"
                             data-prefix="fas"
                             data-icon="film"
-                            class="svg-inline--fa fa-film CourseDetail_icon__sLJtd"
+                            className="svg-inline--fa fa-film CourseDetail_icon__sLJtd"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -162,7 +162,7 @@ export const CourseDetailPage = (props) => {
                             focusable="false"
                             data-prefix="fas"
                             data-icon="clock"
-                            class="svg-inline--fa fa-clock CourseDetail_icon__sLJtd"
+                            className="svg-inline--fa fa-clock CourseDetail_icon__sLJtd"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 512 512">
@@ -184,7 +184,7 @@ export const CourseDetailPage = (props) => {
                             focusable="false"
                             data-prefix="fas"
                             data-icon="battery-full"
-                            class="svg-inline--fa fa-battery-full CourseDetail_icon__sLJtd"
+                            className="svg-inline--fa fa-battery-full CourseDetail_icon__sLJtd"
                             role="img"
                             xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 576 512">
