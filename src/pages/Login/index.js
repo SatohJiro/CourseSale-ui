@@ -1,6 +1,7 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import logo from "./logo.jpg";
+import gg_icon from "../../assets/images/google-icon.jpg";
 
 import { GoogleLogin } from 'react-google-login';
 
@@ -25,29 +26,33 @@ function Login() {
                     </div>
                     <div className={cx("box-name")}> <h2>Đăng nhập vào F8</h2></div>
                     <div className={cx("login-options-box")}>
+                        
                         <div className={cx("login-option")}>
                             <button >
-                                <FontAwesomeIcon icon={faUser} className={cx("icon")} />
-                                <span>Sử dụng email/số điện thoại</span>
+                                <div className={cx("icon")}>
+                                    <img src={gg_icon}></img>
+                                </div>
+                                <span>Đăng nhập bằng email / số điện thoại</span>
                             </button>
                         </div>
 
-                        <GoogleLogin
-                            className={cx("login-option")}
-                            clientId="658977310896-knrl3gka66fldh83dao2rhgbblmd4un9.apps.googleusercontent.com"
-                            buttonText="Đăng nhập bằng Google"
-                            onSuccess={responseGoogle}
-                            onFailure={responseGoogle}
-                            cookiePolicy={'single_host_origin'}
-                        />
+                        <div className={cx("login-option")}>
+                            <button >
+                                <div className={cx("icon")}>
+                                    <img src={gg_icon}></img>
+                                </div>
+                                <span>Đăng nhập bằng Google</span>
+                            </button>
+                        </div>
 
-                        {/* <FacebookLogin
-                            appId="1088597931155576"
-                            autoLoad={true}
-                            fields="name,email,picture"
-                            onClick={componentClicked}
-                            callback={responseFacebook} /> */}
-
+                        <div className={cx("login-option")}>
+                            <button >
+                                <div className={cx("icon")}>
+                                    <img src={gg_icon}></img>
+                                </div>
+                                <span>Đăng nhập bằng Github</span>
+                            </button>
+                        </div>
                     </div>
 
                     <p>Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
