@@ -1,0 +1,25 @@
+.curriculum-heading{
+
+    display: flex;
+
+    ul{
+        display: flex;
+        list-style: none;
+        width: 50%;
+        li{
+            margin-right: 10px;
+        }
+    }
+
+    .toggleBtn{
+        width: 50%;
+        text-align: right;
+        
+        span{
+            user-select: none;
+            cursor: pointer;
+            color: rgb(255, 128, 0);
+            
+        }
+    }
+}

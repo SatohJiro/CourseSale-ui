@@ -1,0 +1,127 @@
+.course-detail {
+    padding-top: 24px;
+    padding-left: 40px;
+    display: flex;
+
+    .course-detail-left {
+        width: 60%;
+    }
+
+    .course-detail-right {
+        width: 40%;
+
+        .previewBtn {
+            width: 500px;
+            height: 300px;
+            margin: auto;
+            position: relative;
+            cursor: pointer;
+            
+            .previewBtn__bg {
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                margin: auto;
+                border-radius: 20px;
+            }
+
+            .previewBtn-front{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: linear-gradient(180deg,rgba(30,30,28,0),rgba(30,30,28,.9));
+                border-radius: 20px;
+                top: 0;
+                left: 0;
+            }
+
+            svg {
+                position: absolute;
+                font-size: 60px;
+                top: 40%;
+                left: 45%;
+                opacity: 0.6;
+                color: #ffffff;
+            }
+
+            span {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 30%;
+                font-weight: bold;
+                font-size: 20px;
+                color: #ffffff;
+            }
+        }
+
+        h5 {
+            font-weight: normal;
+            font-size: 40px;
+            color: rgb(255, 162, 0);
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .registerBtn {
+            padding: 10px 40px;
+            font-size: 20px;
+            background-color: rgb(255, 162, 0);
+            color: #ffffff;
+            text-transform: uppercase;
+            border-radius: 20px;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover{
+                background-color: rgb(220, 139, 0);
+            }
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                margin-left: 35%;
+                padding-top: 20px;
+
+                svg{
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    .preview {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(30, 30, 28, .8);
+        left: 0;
+        top: 0;
+        z-index: 24;
+        display: flex;
+        align-items: center;
+
+        .preview-main {
+            background-color: #ffffff;
+            width: fit-content;
+            padding: 40px;
+            border-radius: 20px;
+            margin: auto;
+            position: relative;
+
+            .preview-closeBtn {
+                position: absolute;
+                font-size: 25px;
+                top: 4%;
+                right: 4%;
+                cursor: pointer;
+            }
+        }
+    }
+}
