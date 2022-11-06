@@ -1,0 +1,13 @@
+.lesson{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ebebeb;
+
+    .left{
+        svg{
+            color: rgb(255, 174, 0);
+            margin-right: 10px;
+        }
+    }
+}

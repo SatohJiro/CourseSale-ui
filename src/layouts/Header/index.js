@@ -5,11 +5,13 @@ import style from "./Header.module.scss";
 
 const cx = classNames.bind(style);
 
-function Header() {
+function Header(props) {
+  const {value, handleChangeValue} = props;
+
   return (
     <header className={cx("wrapper")}>
       <div className={cx("logo")}>
-        <a href="/">
+        <a href="/">  
           <img
             src="https://fullstack.edu.vn/static/media/f8-icon.18cd71cfcfa33566a22b.png"
             alt="F8"
@@ -25,9 +27,10 @@ function Header() {
           </div>
           <input
             className={cx("search-input")}
-            spellcheck="false"
             placeholder="Tìm kiếm khóa học, bài viết, video, ..."
-            value=""
+            spellCheck={false}
+            value={value}
+            onChange={handleChangeValue}
           />
         </div>
       </div>
