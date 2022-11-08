@@ -1,5 +1,6 @@
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import logo from "./logo.jpg";
 import gg_icon from "../../assets/images/google-icon.jpg";
 import user_icon from "../../assets/images/user-icon.png";
@@ -17,6 +18,9 @@ const responseGoogle = (response) => {
 
 
 function Login() {
+    const[status, setStatus] = useState["login"];
+    // alert("stat");
+    
     return (
 
         <div>
@@ -57,6 +61,7 @@ function Login() {
 
 
     );
+    
 }
 
 export default Login;
