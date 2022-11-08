@@ -1,31 +1,27 @@
-import { faUser } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
-import logo from "./logo.jpg";
-import gg_icon from "../../assets/images/google-icon.jpg";
-import user_icon from "../../assets/images/user-icon.png";
+// import { faUser } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import logo from "./logo.jpg";
+// import gg_icon from "../../assets/images/google-icon.jpg";
+// import user_icon from "../../assets/images/user-icon.png";
 
-import { GoogleLogin } from 'react-google-login';
 
-// import "./LoginStyle.module.scss";
+
+import LoginSignUp from "../../components/LoginSignUp";
 import classNames from "classnames/bind";
 import styles from "./LoginStyle.module.scss";
 const cx = classNames.bind(styles);
 
-const responseGoogle = (response) => {
-    console.log(response);
-}
-
 
 function Login() {
-    const[status, setStatus] = useState["login"];
-    // alert("stat");
-    
+
     return (
 
         <div>
             <div className={cx("background-container")}>
-                <div className={cx("box")}>
+
+                <LoginSignUp />
+
+                {/* <div className={cx("box")}>
                     <div className={cx("logo")}>
                         <img src={logo}></img>
                     </div>
@@ -54,14 +50,14 @@ function Login() {
                     <div className={cx("term")}>
                         <p> Việc bạn tiếp tục sử dụng trang web này đồng nghĩa bạn đồng ý với</p> <p><a href=""><u> Điều khoản sử dụng</u></a> của chúng tôi.</p>
                     </div>
-                </div>
+                </div> */}
             </div>
 
         </div>
 
 
     );
-    
+
 }
 
 export default Login;
